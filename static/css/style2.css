@@ -1,0 +1,846 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#aboutPage, #resumePage, #creationsPage, #contactPage{
+	position: relative;
+	display: none;
+}
+
+h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.strong{
+	font-weight: 700;
+}
+
+body{
+	width:100vw;
+	overflow-x: hidden;
+}
+
+body>img#background{
+	position: absolute;
+	z-index: -999;
+	opacity: 0.0;
+	display:inline-block;
+	width:60%;
+	right:-10em;
+	top:20%;
+
+	-webkit-transition:all 6s ease;
+	transition:all 6s ease;
+
+
+}
+
+header{
+
+	margin-top:1em;
+	background: rgba(240,198,71,0);
+	width:90%;
+	padding:1em 0em 1em 1em;
+	position: relative;
+	z-index: 900;
+	display:inline-block;
+	border-radius: 0em 0.5em 0.5em 0em;
+	
+
+	opacity: 0.4;
+	-webkit-transform:translate(-38em,0em);
+	transform:translate(-40em,0em);
+
+	-webkit-transition: all 1s ease;
+	transition:all 1s ease;
+}
+
+header h1{
+	font-family: 'Lato', sans-serif;
+	color:white;
+	font-size: 2.4em;
+	text-transform: uppercase;
+	display:inline-block;
+	vertical-align: top;
+	font-weight: 300;
+
+	opacity: 0;
+	-webkit-transform:translate(0em,-0.3em);
+	transform:translate(0em,-0.3em);
+
+	-webkit-transition:all 0.8s ease 0.8s;
+	transition:all 0.8s ease 0.8s;
+
+}
+
+header img.menuButton{
+	width:2em;
+	margin-right:1em;
+	margin-top:0.3em;
+}
+
+header img.headerLogo{
+	position:absolute;
+	-webkit-transform:translate(3em,-4.2em);
+	transform:translate(3em,-4.2em);	
+}
+
+nav{
+	position:absolute;
+	width:80%;
+	height:0;
+	margin-top:0em;
+	background: rgba(240,198,71,1);
+	margin-left:3em;
+	z-index: 999;
+	padding-top:1.2em;
+	transform: translate(0em,-4.8em);
+	-webkit-transform: translate(0em, -4.8em);
+	border-radius: 0em 0.5em 0.5em 0.5em;
+
+
+	opacity: 0;
+
+	-webkit-transition:all 0.7s ease;
+	transition:all 0.7s ease;
+}
+
+nav ul{
+	list-style: none;
+
+	-webkit-transform: scale(0,0) translate(1em,0em);
+	transform: scale(0,0) translate(1em, 0em);
+	
+
+	-webkit-transition:all 0.5s ease 0.2s;
+	transition:all 0.5s ease 0.2s;
+}
+
+nav ul li {
+	margin-left:0em;
+	margin-bottom:3em;
+	text-transform: uppercase;
+}
+
+nav ul li:nth-of-type(1){
+	margin-left:0em;
+}
+
+nav ul li a{
+	display:block;
+	text-decoration: none;
+	text-align: left;
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+.menuFade{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background: black;
+	opacity: 0;
+	z-index: -1;
+
+	-webkit-transition: opacity 1s ease, z-index 0s ease;
+	transition: opacity 1s ease, z-index 0s ease;
+}
+
+article{
+	margin-top:2em;
+	font-family: 'Lato', sans-serif;
+	width:100%;
+	position:absolute;
+
+}
+
+article>h1{
+	color:#F1C738;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-left:0.5em;
+
+	opacity: 0;
+
+	-webkit-transform:translateY(-2em);
+	transform:translateY(-2em);
+
+	-webkit-transition:all 2s ease 1.2s;
+	transition:all 2s ease 1.2s;
+}
+
+article>p{
+	margin-top:1.3em;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: 300;
+
+	opacity: 0;
+	-webkit-transform:translateY(-4em);
+	transform:translateY(-4em);
+
+	-webkit-transition:all 2s ease 1.5s;
+	transition:all 2s ease 1.5s;
+}
+
+@media only screen and (min-width: 600px){
+
+	article>h1{
+		font-size: 4em;
+	}
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+	header{
+		width:25em;
+	}
+
+	article>h1{
+		font-size: 4em;
+	}
+
+	header h1{
+		font-size: 3.5em;
+	}
+
+
+	nav{
+		width:90%;
+		background:none;
+		height: 4em;
+		opacity: 1;
+
+	}
+
+	nav ul{
+		-webkit-transform: scale(1,1) translate(0em,0em);
+		transform: scale(1,1) translate(0em, 0em);
+		float:right;
+	}
+
+	nav ul li{
+		display:inline-block;
+		
+
+	}
+
+	nav ul li:hover{
+		border-bottom: 2px solid black;
+	}
+
+	nav ul li:not(:first-of-type){
+		margin-left:2em; 
+	}
+
+	nav ul li a{
+		color:black;
+		font-size: 1.3em;
+		font-weight: 400;
+	}
+
+	.menuButton{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+	nav{
+		width:90%;
+	}
+
+	nav ul li a{
+		font-size: 1.4em;
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+	nav{
+		width:91%;
+	}
+
+}
+
+/*--------ANIMATIONS--------*/
+section#aboutPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+section#resumePage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+
+}
+
+section#creationsPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+section#contactPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+
+/*--------CREATIONS PAGE--------*/
+ul li.item>img{
+	width:100%;
+}
+
+section#creationsPage article ul{
+	list-style: none;
+}
+
+section#creationsPage article ul li.item{
+	margin-top:2em;
+}
+
+section#creationsPage article ul li.item:nth-of-type(1){
+	margin-top:2em;
+}
+
+section#creationsPage article ul li.item>h2{
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
+	font-weight: 400;
+}
+
+section#creationsPage article ul li.item>img:hover{
+	cursor: pointer;
+}
+
+section#creationsPage article ul li.item>h2>span{
+	color: rgb(240,198,71);
+	font-weight: 700;
+}
+
+section#creationsPage article>div.legend{
+	font-size: 1.4em;
+	font-weight: 400;
+	margin-left: 1em;
+	line-height: 1.8em;
+	margin-bottom:2.5em;
+}
+
+section#creationsPage article>div.legend>span{
+	font-weight: 700;
+	color: rgb(240,198,71);
+}
+
+section#creationsPage article p.explanation{
+	width:70%;
+	margin-left:1em;
+	line-height: 1.7em;
+	font-weight: 400;
+	font-size: 1.2em;
+	margin-bottom:2em;
+}
+
+@media only screen and (min-width: 600px){
+	section#creationsPage article>div.legend{
+		margin-left:1.5em;
+		font-size: 1.5em;	
+	}
+
+	section#creationsPage article p.explanation{
+		margin-left:1.5em;
+	}
+}
+
+section#creationsPage article ul li div.itemInfo a.button{
+	padding:1em 1em 1em 1em;
+	position:relative;
+	background:#FED955;
+	margin-bottom:1.2em;
+	color:black;
+	box-shadow: 2px 2px 0px 1px #caa305;
+	border-radius: 0.15em;
+}
+
+section#creationsPage article ul li div.itemInfo a.button:hover{
+	color:white;
+	background-color: #f5ca20;
+	border:none;
+}
+
+
+section#creationsPage article ul li div.itemInfo{
+	max-height: 0;
+	background: rgba(240,198,71,1);
+
+	-webkit-transition:all 1s ease 0s;
+	transition:all 1s ease 0s;
+}
+
+section#creationsPage article ul li div.itemInfo>img{
+	width:98%;
+	display:block;
+	margin:auto;
+	padding-bottom:0.5em;
+
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+
+}
+
+section#creationsPage article ul li div.itemInfo>img.sidebyside{
+	width:49.5%;
+	display:inline-block;
+	margin:auto;
+
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+
+}
+
+section#creationsPage article ul li div.itemInfo>img.sidebyside6{
+	width:16.66%;
+	display:inline-block;
+	margin:auto;
+
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+}
+
+section#creationsPage article ul li div.itemInfo>img.sidebyside4{
+	width:25%;
+	display:inline-block;
+	margin:auto;
+
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+}
+
+section#creationsPage article ul li div.itemInfo>img.sidebyside:nth-of-type(2n+1){
+	margin-right:0.5%;
+
+}
+
+section#creationsPage article ul li div.itemInfo>img.sidebyside:nth-of-type(2n){
+	margin-left:0.5%;
+
+}
+
+section#creationsPage article ul li div.itemInfo>img.long{
+	height:50%;
+	display:block;
+	margin:auto;
+	padding-bottom: 1.4em;
+
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+
+}
+
+/*section#creationsPage article ul li div.itemInfo>.video-container{
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+
+    -webkit-transform:scale(0,0);
+    transform:scale(0,0);
+
+    -webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+
+}*/
+
+/*section#creationsPage article ul li div.itemInfo>.video-container>embed{
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+section#creationsPage article ul li div.itemInfo>video{
+	width:100%;
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+}
+
+
+
+
+section#creationsPage article ul li div.itemInfo p{
+	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: 400;
+	color:white;
+	width:90%;
+	margin:auto;
+	padding-bottom:1.4em;
+	padding-top: 1em;
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+
+	-webkit-transition:all 1s ease 0.3s;
+	transition:all 1s ease 0.3s;
+}
+
+section#creationsPage article ul li div.itemInfo p a{
+	color: black;
+}
+
+section#creationsPage article ul li div.itemInfo p a:hover{
+	color: black;
+	border-bottom:1px solid black;
+}
+
+section#creationsPage article ul li div.itemInfo h2{
+	margin-left:0.2em;
+	margin-bottom:0.5em;
+	-webkit-transform:scale(1,0);
+	transform:scale(1,0);
+
+	-webkit-transition:all 0.4s ease 0.3s;
+	transition:all 0.4s ease 0.3s;
+}
+
+
+img.creationImage{
+	opacity: 0;
+	-webkit-transition:opacity 0.3s ease;
+  	transition: opacity 1s ease;
+}
+
+@media only screen and (min-width: 800px) {
+	section#creationsPage article ul li{
+		display:inline-block;
+		width:49.8%;
+		vertical-align: top;
+	}
+
+	section#creationsPage article p.explanation{
+		width:60%;
+		margin-left:1.8em;
+	}
+
+	section#creationsPage article ul li:nth-of-type(2n+1){
+		margin-right: 0.2%;
+	}
+
+	section#creationsPage article ul li:nth-of-type(2n){
+		margin-left: 0.2%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	section#creationsPage article ul li{
+		display:inline-block;
+		width:33.1%;
+		vertical-align: top;
+	}
+
+	section#creationsPage article p.explanation{
+		width:60%;
+	}
+
+	section#creationsPage article ul li:nth-of-type(2n+1){
+		margin-right: 0px;
+	}
+
+	section#creationsPage article ul li:nth-of-type(2n){
+		margin-left: 0px;
+	}
+
+	section#creationsPage article ul li:nth-of-type(3n+2){
+		margin-left: 0.3%;
+		margin-right: 0.3%;
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+	section#creationsPage article ul li{
+		display:inline-block;
+		width:24.91%;
+		vertical-align: top;
+	}
+
+	section#creationsPage article ul li:nth-of-type(2n+1){
+		margin-right: 0px;
+	}
+
+	section#creationsPage article ul li:nth-of-type(2n){
+		margin-left: 0px;
+	}
+
+	section#creationsPage article ul li:nth-of-type(3n+2){
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	section#creationsPage article ul li:not(:nth-of-type(4n)){
+		margin-left: 0.1%;
+	}
+}
+
+/*--------RESUME PAGE--------*/
+section#resumePage .skillist{
+	width:90%;
+	margin:auto;
+	margin-bottom: 2em;
+}
+
+section#resumePage>article>h1>a{
+	font-weight:300;
+	font-size: 0.8em;
+}
+
+section#resumePage>article>h1>a:hover{
+	border-bottom: 2px #acb7c0 solid;
+}
+
+section#resumePage .skillist img{
+	max-width: 30%;
+}
+
+section#resumePage #design-software.skillist img{
+	max-width:60%;
+}
+
+section#resumePage .skillist .skillItem{
+	width:50%;
+	display:inline-block;
+	vertical-align: top;
+	margin-bottom: 2em;
+}
+
+section#resumePage .skillist .skillItem>p{
+	font-size: 1em;
+}
+
+section#resumePage>article>.skillist>h2{
+	margin-bottom: 1em;
+
+}
+
+@media only screen and (min-width: 600px) {
+
+	section#resumePage .skillist:nth-of-type(2)>h2{
+		margin-left:1em;
+	}
+
+	section#resumePage>article>.skillist>h2{
+		font-size: 2em;
+	}
+
+	section#resumePage>article>h2{
+		font-size: 2em;
+		margin-left: 1em;
+	}
+
+	section#resumePage .skillist:nth-of-type(1){
+		margin-left: 2.2em;
+		margin-bottom: 3em;
+	}
+
+	section#resumePage .skillist{
+		margin:0;
+	}
+
+	section#resumePage .skillist img{
+		max-width: 10em;
+	}
+
+	section#resumePage .skillist .skillItem{
+		width:33.3%;
+	}
+
+	section#resumePage .skillist .skillItem>p{
+		font-size: 1em;
+	}
+
+	section#resumePage article>h1{
+		margin-bottom:0.5em;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+
+	section#resumePage .skillist:nth-of-type(2){
+		margin:0;
+	}
+
+	section#resumePage .skillist .skillItem{
+		width:15em;
+	}
+
+	section#resumePage .skillist .skillItem>p{
+		font-size: 1.3em;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+	section#resumePage .skillist{
+		display:inline-block;
+		vertical-align: top;
+		width: 40%;
+	}
+
+	section#resumePage .skillist:nth-of-type(1){
+		width:52%;
+	}
+
+	section#resumePage .skillist:nth-of-type(2){
+		margin-left: 3em;
+	}
+
+	section#resumePage .skillist img{
+		max-width: 14em;
+	}
+
+	section#resumePage .skillist .skillItem>p{
+		font-size: 1.3em;
+	}
+
+	section#resumePage .skillist:nth-of-type(1)>h2{
+		margin-left:0em;
+	}
+}
+
+/*--------ABOUT PAGE--------*/
+
+section#aboutPage article p{
+	max-width:100%;
+	margin-left:1em;
+	line-height: 1.7em;
+	font-weight: 400;
+	font-size: 1.2em;
+	margin-bottom:3em;
+	
+}
+
+section#aboutPage article p a{
+	font-weight: 700;
+}
+
+section#aboutPage article p a:hover{
+	border-bottom:1px solid #acb7c0;
+}
+
+section#aboutPage div.introductionPhoto img{
+	width:80%;
+	max-width:25em;
+	display:block;
+	margin:auto;
+	margin-bottom: 2em;
+	margin-top:2em;
+}
+
+section#aboutPage h2{
+	margin-left:1.2rem;
+	font-size:2em;
+}
+
+@media only screen and (min-width: 600px) {
+
+	section#aboutPage article p{
+		margin-left: 1.7em;
+	}
+
+	section#aboutPage article p{
+		max-width:30em;
+	}
+
+	section#aboutPage h2{
+		margin-left: 2rem;
+	}
+
+
+		
+
+}
+
+@media only screen and (min-width: 850px) {
+	
+	section#aboutPage div.introductionPhoto, section#aboutPage div.introductionText {
+		display:inline-block;
+		width:40%;
+		vertical-align: top;
+	}
+	
+}
+
+/*--------CONTACT PAGE--------*/
+
+
+section#contactPage article div#contactText{
+	font-size:1.6em;
+	margin-left:0.8em;
+	max-width:800px;
+	font-weight:500;
+}
+
+section#contactPage article div#contactText a,section#contactPage article div#contactText span{
+	color: rgba(240,198,71,1);
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+section#contactPage article div#contactText span{
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+	section#contactPage article div#contactText{
+		font-size:2.4em;
+		margin-left
+	}
+
+}
+
+
+
+
+
+
+
+
+

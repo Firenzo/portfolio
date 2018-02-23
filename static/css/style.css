@@ -1,0 +1,167 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body>img#background{
+	position: absolute;
+	z-index: -999;
+	opacity: 0.0;
+	display:inline-block;
+	width:60%;
+	right:-10em;
+	top:20%;
+
+	-webkit-transition:all 6s ease;
+	transition:all 6s ease;
+
+
+}
+
+header{
+	margin-top:5em;
+	background: rgba(240,198,71,0);
+	width:30em;
+	padding:1em 0em 1em 3em;
+	display:inline-block;
+
+	opacity: 0.4;
+	-webkit-transform:translate(-38em,0em);
+	transform:translate(-40em,0em);
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+header h1{
+	font-family: 'Lato', sans-serif;
+	color:white;
+	font-size: 4em;
+	text-transform: uppercase;
+	display:inline-block;
+	vertical-align: top;
+	font-weight: 300;
+
+	opacity: 0;
+	-webkit-transform:translate(0em,-0.3em);
+	transform:translate(0em,-0.3em);
+
+	-webkit-transition:all 0.8s ease 0.8s;
+	transition:all 0.8s ease 0.8s;
+
+}
+
+header img{
+	position:absolute;
+	-webkit-transform:translate(3em,-4.2em);
+	transform:translate(3em,-4.2em);	
+}
+
+nav{
+	float:right;
+	width:50em;
+	margin-top:7em;
+
+
+	opacity: 0;
+
+	-webkit-transition:all 4s ease 1.2s;
+	transition:all 4s ease 1.2s;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li {
+	display:inline;
+	margin-left:2em;
+	text-transform: uppercase;
+}
+
+nav ul li:nth-of-type(1){
+	margin-left:2em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:black;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+article{
+	margin-top:7em;
+	font-family: 'Lato', sans-serif;
+	width:50em;
+	padding-left: 3em;
+	position:absolute;
+
+}
+
+article h1{
+	color:#F1C738;
+	font-size: 9em;
+	text-transform: uppercase;
+	font-weight: 300;
+
+	opacity: 0;
+
+	-webkit-transform:translateY(-2em);
+	transform:translateY(-2em);
+
+	-webkit-transition:all 2s ease 1.2s;
+	transition:all 2s ease 1.2s;
+}
+
+article p{
+	margin-top:1.3em;
+	font-size: 1.3em;
+	line-height: 1.7em;
+	font-weight: 300;
+
+	opacity: 0;
+	-webkit-transform:translateY(-4em);
+	transform:translateY(-4em);
+
+	-webkit-transition:all 2s ease 1.5s;
+	transition:all 2s ease 1.5s;
+}
+
+/*--------ANIMATIONS--------*/
+section#aboutPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+section#achievementsPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+
+}
+
+section#creationsPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+section#contactPage{
+	opacity: 0;
+
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+
+
+
+
+
+
