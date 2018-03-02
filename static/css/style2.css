@@ -373,10 +373,10 @@ section#creationsPage article p.explanation{
 section#creationsPage article ul li div.itemInfo a.button{
 	padding:1em 1em 1em 1em;
 	position:relative;
-	background:#FED955;
+	background:#868686;
 	margin-bottom:1.2em;
-	color:black;
-	box-shadow: 2px 2px 0px 1px #caa305;
+	color:white;
+	box-shadow: 2px 2px 0px 1px #4a4a4a;
 	border-radius: 0.15em;
 }
 
@@ -390,6 +390,7 @@ section#creationsPage article ul li div.itemInfo a.button:hover{
 section#creationsPage article ul li div.itemInfo{
 	max-height: 0;
 	background: rgba(240,198,71,1);
+	background: rgba(18,25,31,1);
 
 	-webkit-transition:all 1s ease 0s;
 	transition:all 1s ease 0s;
@@ -522,12 +523,14 @@ section#creationsPage article ul li div.itemInfo p{
 }
 
 section#creationsPage article ul li div.itemInfo p a{
-	color: black;
+	color: #cccccc;
+	
 }
 
 section#creationsPage article ul li div.itemInfo p a:hover{
-	color: black;
-	border-bottom:1px solid black;
+	color: #ffffff;
+	border-bottom:1px solid white;
+	
 }
 
 section#creationsPage article ul li div.itemInfo h2{
@@ -593,7 +596,7 @@ img.creationImage{
 	}
 }
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 2200px) {
 	section#creationsPage article ul li{
 		display:inline-block;
 		width:24.91%;
