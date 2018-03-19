@@ -230,7 +230,7 @@ $(document).ready(function() {
                 $("html, body").animate({ scrollTop: $("section#creationsPage article ul li" + item + " h2").offset().top }, 500);
 
                 $("section#creationsPage article ul li" + item + " div.itemInfo").css({
-                    "max-height":"110em",
+                    "max-height":"140em",
                     "-webkit-transition":"all 1s ease 0s",
                     "transition":"all 1s ease 0s",
                 });

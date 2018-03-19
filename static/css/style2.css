@@ -396,6 +396,10 @@ section#creationsPage article ul li div.itemInfo{
 	transition:all 1s ease 0s;
 }
 
+section#creationsPage article ul li div.itemInfo h2{
+	color:white;
+}
+
 section#creationsPage article ul li div.itemInfo>img{
 	width:98%;
 	display:block;
